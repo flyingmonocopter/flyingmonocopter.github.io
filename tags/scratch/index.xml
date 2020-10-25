@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scratch on Flying Monocopter</title>
+    <link>https://flyingmonocopter.github.io/tags/scratch/</link>
+    <description>Recent content in scratch on Flying Monocopter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <lastBuildDate>Mon, 02 Mar 2020 21:47:22 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/scratch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arduino BLE 스크래치 프로그래밍</title>
+      <link>https://flyingmonocopter.github.io/posts/arduinoscratch/</link>
+      <pubDate>Mon, 02 Mar 2020 21:47:22 +0900</pubDate>
+      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/arduinoscratch/</guid>
+      <description>스크래치 3.0 Extension 프로그래밍 소개
+스크래치 3.0 스크래치 3.0 은 2.0 과 다르게 Web 어플리케이션이다. 즉 웹에서 동작한다. 이는 매우 훌륭한데 단점이 있다면 하드웨어 자원을 Native 어플리케이션처럼 마음대로 쓸 수 없다. 다행하게도 스크래치 링크(Scratch Link) 라는 프로그램을 제공하고 있어, BT/BLE 장치와 통신이 가능하다.
+스크래치 링크는 Native 어플리케이션으로 BT/BLE 장치를 관리한다. 스크래치 링크는 웹소켓 채널을 제공하는데 스크래치 3.0 은 이 웹소켓을 통해서 장치와 통신할 수 있다.
+  RGB LED 제어 예제 스크래치 3.</description>
+    </item>
+    
+  </channel>
+</rss>

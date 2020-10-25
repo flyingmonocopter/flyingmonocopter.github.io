@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino BLE IOT 프로그래밍  | Flying Monocopter</title>
+  <meta name="description" content="Flying Monocopter 'Arduino BLE IOT 프로그래밍'을 한 번 살펴보세요.">
+  <meta property="og:title" content="Arduino BLE IOT 프로그래밍">
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-01-25">
+  
+  <meta property="og:description" content="Flying Monocopter 'Arduino BLE IOT 프로그래밍'을 한 번 살펴보세요.">
+  <meta property="og:url" content="https://flyingmonocopter.github.io/posts/arduinoiot/">
+  <meta property="og:site_name" content="Flying Monocopter">
+  
+  <meta property="og:image" content="https://flyingmonocopter.github.io/images/thumbnail.png">
+  
+  
+  <meta property="og:tags" content="arduino">
+  
+  <meta property="og:tags" content="ble">
+  
+  <meta property="og:tags" content="iot">
+  
+  <meta property="og:tags" content="bleno">
+  
+  <meta property="og:tags" content="nodejs">
+  
+  <meta property="og:tags" content="아두이노">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://flyingmonocopter.github.io/posts/arduinoiot/">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/agate.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180510293-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-180510293-1');
+  </script>
+  
+  
+  <script type="text/javascript">
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.className === 'menu')
+      e.className = 'menu hidden';
+    else
+      e.className = 'menu';
+  }
+  </script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo burger">
+      <a href="/">
+        <img src="/images/logo.png" height="34px" />
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="toggle_visibility('menu')">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="menu" class="menu hidden">
+      <ul>
+        <li><a href="/posts">POSTS...</a></li>
+        <li><a href="/categories">@CATEGORIES</a></li>
+        <li><a href="/tags">#TAGS</a></li>
+        <li><a href="/about">{ABOUT}</a></li>
+      </ul>
+      <input class="search" id="search-input" type="search" placeholder="검색어" value="">
+    </div>
+  </div>
+
+
+<div class="post">
+  <div class="post-title">
+    <a href="https://flyingmonocopter.github.io/posts/arduinoiot/">
+      <img src="/images/post-title-icon.png" />
+      <div class="post-meta">
+        <time>
+          
+          2020년 01월 25일 21시 47분
+          
+        </time>
+        <h1>Arduino BLE IOT 프로그래밍</h1>
+      </div>
+    </a>
+  </div>
+  
+  <div class="post-toc">
+    <span class="title">차례</span>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ble-를-iot-장치로-사용하기">BLE 를 IOT 장치로 사용하기</a></li>
+    <li><a href="#아두이노-코드---peripheral">아두이노 코드 - peripheral</a></li>
+    <li><a href="#nodejs-코드---central">NodeJS 코드 - central</a>
+      <ul>
+        <li><a href="#1-필요한-node-package-설치">1 필요한 Node package 설치</a></li>
+        <li><a href="#2-periperal-찾기">2 Periperal 찾기</a></li>
+        <li><a href="#3-servicecharacteristic-얻어오기">3 Service/Characteristic 얻어오기</a></li>
+        <li><a href="#최종-코드">최종 코드</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+  
+  <section class="post-content">
+    <p>NodeJS 로 IOT 프로그래밍</p>
+<h2 id="ble-를-iot-장치로-사용하기">BLE 를 IOT 장치로 사용하기</h2>
+<p>BLE 관련 프로그래밍을 조사해면, 대부분의 Central 장치에 대한 소스는 Android 와 iOS 중심으로 되어있다.
+최근 Linux, MacOS, Windows 는 BLE 를 지원한다. 그래서 PC 를 BLE central 장치로 사용하려고 한다.
+집안에서 서비스를 한다고 가정했을 때, PC 에서 BLE periperal 을 직접 제어할 수 있으면 좋겠다.</p>
+<p>프로그래밍 도구로는 NodeJS 를 쓸 것이다. 파이선도 가능하지만 웹을 생각한다면 Node 가 좀 더 낫다.</p>
+<p>Bluno 나 BLE Nano 를 peripheral 장치로 사용할 것이다. 이 것들은 Characteristic 이 고정되어 있지만, 데이터 통신을 가능하다.</p>
+<h2 id="아두이노-코드---peripheral">아두이노 코드 - peripheral</h2>
+<p>우선 Bluno 로 시작하는데, BLE Nano 도 동일하다.</p>
+<p>아래 코드를 보면 전혀 BLE 냄새가 안난다. Scan, response 의 일은 내장된 BLE chip 이 알아서 해주기 때문에 그냥 데이터 관련 코딩만 하면 된다.
+Serial 을 여는데 이 Serial 은 아두이노 UART 와 내장 BLE chip 사이의 Serial 이다. 기본 baud rate 은 AT 명령어로 바꿀 수 있다.</p>
+<p>참고 : <a href="https://wiki.dfrobot.com/Bluno_SKU_DFR0267">https://wiki.dfrobot.com/Bluno_SKU_DFR0267</a></p>
+<p>loop 안을 보면 받은 데이터에 단순히 16 을 더해서 다시 보내는데, Central 장치가 [1,2,3,&hellip;,9,a] 10 byte 를 보내면 [11,12,13,&hellip;19,1a] 를 보낸다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setup</span>() {
+  Serial.begin(<span style="color:#ae81ff">115200</span>);   <span style="color:#75715e">// bluno default baud rate
+</span><span style="color:#75715e"></span>}
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>() {
+  <span style="color:#66d9ef">if</span> (Serial.available()) {
+    byte data <span style="color:#f92672">=</span> Serial.read();
+    data <span style="color:#f92672">+=</span> <span style="color:#ae81ff">16</span>;
+    Serial.write(data);
+  }
+}</code></pre></div>
+<h2 id="nodejs-코드---central">NodeJS 코드 - central</h2>
+<h3 id="1-필요한-node-package-설치">1 필요한 Node package 설치</h3>
+<pre><code># Requirement : Node &amp; noble package
+$ npm install noble
+
+# Noble support node v8. Use @abandonware/noble with latest node ver
+$ npm install @abandonware/noble
+</code></pre><h3 id="2-periperal-찾기">2 Periperal 찾기</h3>
+<p>Periperal BLE Service 와 Characteristics 를 알아야 하는데, 이를 찾는 예제 코드가 있다.</p>
+<pre><code>$ node node_modules/@abandonware/noble/examples/advertisement-discovery.js
+
+# or copy the js file to current dir and modify the first line
+# FROM var noble = require('../index');
+# TO   var noble = require('@abandonware/noble');
+
+$ node advertisement-discovery.js
+</code></pre><p>BLE 장치의 name, id, address 를 찾을 수 있다. Service 와 Characteristic 은 UUID 형태로 제공되는데 아직은 알 수 없다.</p>
+<p>Service UUID 는 <a href="https://www.bluetooth.com/specifications/gatt/services/">https://www.bluetooth.com/specifications/gatt/services/</a> 를 참고하자.</p>
+<pre><code>peripheral discovered (874b3456cc63486aa6d178ebfc20a859 with address &lt;20-cd-39-xx-xx-xx, public&gt;, connectable true, RSSI -76:
+    hello my local name is:
+        Bluno
+    can I interest you in any of the following advertised services:
+        undefined
+</code></pre><h3 id="3-servicecharacteristic-얻어오기">3 Service/Characteristic 얻어오기</h3>
+<p>장치의 이름, 주소를 알았으니 이제 어떤 Service 가 있는지 알아봐야 한다.
+peripheral_explorer.js 를 가져와서 실행하기 전에 async 패키지를 설치한다.</p>
+<pre><code>$ npm install async
+</code></pre><p>async 버전 차이 때문에, 코드 수정이 좀 필요하다.</p>
+<pre><code># Find async.whilst and add “async” to the next function. (two times)
+async.whilst(
+    async function () {   // &lt;- function () {
+# Second, show descriptors
+async.series([
+  function(callback) {
+    characteristic.discoverDescriptors(function(error, descriptors){
+      if (descriptors.length &gt; 0)
+        characteristicInfo += '\n    descriptor  ' + descriptors;
+      callback();
+    });
+  },
+</code></pre><p>아래와 같이 실행한다.</p>
+<pre><code>$ node peripheral-explorer.js 874b3456cc63486aa6d178ebfc20a859
+or
+$ node peripheral-explorer.js 20-cd-39-xx-xx-xx
+</code></pre><p>결과는 다음과 같다.</p>
+<pre><code>peripheral with ID 874b3456cc63486aa6d178ebfc20a859 found
+  Local Name        = Bluno
+  Manufacturer Data = 4c000215e2c56db5dffb48xxx...
+services and characteristics:
+180a (Device Information)
+  2a23 (System ID)
+    properties  read
+    value       babc93000039cd20 | ':&lt;9M '
+  2a24 (Model Number String)
+    properties  read
+    value       444620426c756e6f | 'DF Bluno'
+  2a25 (Serial Number String)
+    properties  read
+    value       30313233343536373839 | '0123456789'
+  2a26 (Firmware Revision String)
+    properties  read
+    value       46572056312e3937 | 'FW V1.97'
+  2a27 (Hardware Revision String)
+    properties  read
+    value       48572056312e37 | 'HW V1.7'
+  2a28 (Software Revision String)
+    properties  read
+    value       53572056312e3937 | 'SW V1.97'
+  2a29 (Manufacturer Name String)
+    properties  read
+    value       4446526f626f74 | 'DFRobot'
+  2a2a (IEEE 11073-20601 Regulatory Certification Data List)
+    properties  read
+    value       fe006578706572696d656e74616c | '~experimental'
+  2a50 (PnP ID)
+    properties  read
+'   value       010d0000001001 | '
+dfb0
+  dfb1
+    descriptor  {&quot;uuid&quot;:&quot;2901&quot;,&quot;name&quot;:&quot;Characteristic User Description&quot;,&quot;type&quot;:&quot;org.bluetooth.descriptor.gatt.characteristic_user_description&quot;}
+    properties  read, writeWithoutResponse, write, notify
+    value       01 | ''
+  dfb2
+    descriptor  {&quot;uuid&quot;:&quot;2901&quot;,&quot;name&quot;:&quot;Characteristic User Description&quot;,&quot;type&quot;:&quot;org.bluetooth.descriptor.gatt.characteristic_user_description&quot;}
+    properties  read, writeWithoutResponse, write, notify
+    value       02 | ''
+</code></pre><p>Bluno 는 UUID “180a” and “dfb0” 두개의 서비스를 갖고 있다.</p>
+<p>UUID &ldquo;180a&rdquo; 는 Device 정보를 나타내는 서비스인데, 대부분의 BLE 장치에는 이 서비스를 가지고 있어 자신의 정보를 알려준다.</p>
+<p>UUID &ldquo;dbf0&rdquo; 는 Bluno 가 제공하는 서비스이며, 두개의 Characteristic 을 가지고 있다. (&ldquo;dbf1&rdquo;, &ldquo;dbf2&rdquo;) &ldquo;dbf1&rdquo; 은 Serial, &ldquo;dbf2&rdquo; 는 Command 역할을 한다. (시리얼 통신 채널과 AT Command 채널)</p>
+<p>Characteristic 를 읽고 쓰려면 get/put 을 사용한다. Notify 는 Periperal 에서 Central 로 push 를 가능하게 하는데 이는 &ldquo;2902&rdquo; descriptor 를 이용한다. (CCCD : Client Characteristic Configuration Descriptor)</p>
+<p>참고 : <a href="https://www.bluetooth.com/specifications/gatt/descriptors/">https://www.bluetooth.com/specifications/gatt/descriptors/</a></p>
+<p>Bluno 는 이 CCCD 를 제공하지 않는다. 그래서 MacOS 에서는 Subscription (Notification request) 기능을 사용할 수 없다.
+Linux 나 Window 는 CCCD 없이도 잘 된다. Bluno 가 스펙에 안맞긴 하지만, 다소 의아하다. 이 문제에 관심이 있으면 아래 링크를 참고한다.</p>
+<p>참고 : <a href="https://www.dfrobot.com/forum/viewtopic.php?f=18&amp;t=2035&amp;start=20">https://www.dfrobot.com/forum/viewtopic.php?f=18&amp;t=2035&amp;start=20</a></p>
+<p>Keywish BLE Nano 는 Serial 통신을 위한 하나의 characteristic 만을 제공한다(“ffe0”), CCCD 도 있고 MacOS 에서 잘 작동한다.</p>
+<h3 id="최종-코드">최종 코드</h3>
+<p>최종 Javascript 코드 :
+<a href="https://gist.github.com/doojinkang/f825bf4f8f1883802d15bbfec2bf4173">https://gist.github.com/doojinkang/f825bf4f8f1883802d15bbfec2bf4173</a></p>
+<p>1~10 을 buffer 에 넣어서 periperal 로 보낸다.
+Periperal (아두이노) 쪽에서는 16을 더해서 0x11, 0x12, &hellip; 0x1a 를 PC 로 보낸다.</p>
+<pre><code># For Bluno (on Linux)
+$ node ble_arduino.js dfb0 dfb1
+
+# For BLE Nano (on Both Linux or MacOS)
+$ node ble_arduino.js ffe0 ffe1
+
+# Discover(Scan) and get ID/Address/ Name ---&gt;
+        # Connect and get Services/Characteristics ---&gt;
+                 # Subscribe / Write Characteristics (Serial)
+</code></pre><p>기본적인 통신이 되었으니, 이제 IOT 환경을 꾸밀 수 있을 것이다.</p>
+
+  </section>
+
+
+  <div class="post-meta-code">
+  
+    <div>
+      <i>관련 글 : </i>
+      
+      
+      <a class="left" href="https://flyingmonocopter.github.io/posts/arduinoble/" rel="prev">
+        이전글 : <span>Arduino BLE 이해</span>
+      </a>
+      
+      
+      
+      
+      <a class="right" href="https://flyingmonocopter.github.io/posts/arduinoscratch/" rel="next">
+        다음글 : <span>Arduino BLE 스크래치 프로그래밍</span>
+      </a>
+      
+      
+    </div>
+  
+
+  
+    <div>
+      <i>카테고리 : </i>
+      
+      
+      <a href="https://flyingmonocopter.github.io/categories/arduino">[arduino]</a>
+      
+    </div>
+  
+
+  
+    <div>
+      <i>태그 : </i>
+      
+      
+      <a href="https://flyingmonocopter.github.iotags/arduino">#arduino</a>
+      
+      <a href="https://flyingmonocopter.github.iotags/ble">#ble</a>
+      
+      <a href="https://flyingmonocopter.github.iotags/iot">#iot</a>
+      
+      <a href="https://flyingmonocopter.github.iotags/bleno">#bleno</a>
+      
+      <a href="https://flyingmonocopter.github.iotags/nodejs">#nodejs</a>
+      
+      <a href="https://flyingmonocopter.github.iotags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8">#아두이노</a>
+      
+      
+    </div>
+  
+
+  
+    <div>
+      <i>참고 글 : </i>
+      
+      <a href="https://medium.com/@doojin.kang/arduino-ble-as-iot-5abd60e8aa21">https://medium.com/@doojin.kang/arduino-ble-as-iot-5abd60e8aa21</a>
+      
+    </div>
+  
+
+  </div>
+
+
+
+  <div class="post-comment">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "flying-monocopter" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+</div>
+
+
+<footer class="footer">
+  <div class="copyright">
+    <a href="https://https://gohugo.io/"><img src="/images/hugo-logo-wide.svg" height=20px></a>
+  </div>
+  <div class="copyright">
+    HUGO THEME by COPYRIGHT (C) <a href="https://blog.lulab.net">DONGGEUN,BANG (LUBANG).</a> ALL RIGHTS RESERVED.
+  </div>
+  <div class="share">
+    FLYING MONOCOPTER :
+    <a href="https://github.com/flyingmonocopter" title="Github" target="_blank"><i class="fa fa-github"></i> GITHUB </a> &nbsp;
+    <a href="mailto:flyingmonocopter@gmail.com" title="Email" target="_blank"><i class="fa fa-envelope"></i> mail</a>
+  </div>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Flying Monocopter</title>
+    <link>https://flyingmonocopter.github.io/tags/python/</link>
+    <description>Recent content in python on Flying Monocopter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <lastBuildDate>Wed, 19 Aug 2020 21:47:22 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>파이선 연산자 오버로딩 이해</title>
+      <link>https://flyingmonocopter.github.io/posts/pythonoperatoroverloading/</link>
+      <pubDate>Wed, 19 Aug 2020 21:47:22 +0900</pubDate>
+      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/pythonoperatoroverloading/</guid>
+      <description>파이선 객체와 연산자 오버로딩 예제
+주의 : 파이선 구현체를 살펴보지는 않았기 때문에, 의도하지 않은 오류가 포함되어 있을 수 있습니다.
+의도하지 않게 동작하는 코드 원래 코드는 좀 더 복잡하지만, 문제가 되는 부분만 발췌해 보면 다음과 같다.
+1 2 3 4 5 6 7  import numpy as np foolist = [] x = np.array([1,2]) foolist.append(x) x += 1 foolist.append(x) print(foolist)   결과는
+ [array([2, 3]), array([2, 3])]
+ ([1,2], [2,3]) 이 찍힐 줄 알았는데, ([2,3], [2,3]) 이 찍혔다.</description>
+    </item>
+    
+  </channel>
+</rss>

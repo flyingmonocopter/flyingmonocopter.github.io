@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pid on Flying Monocopter</title>
+    <link>https://flyingmonocopter.github.io/tags/pid/</link>
+    <description>Recent content in pid on Flying Monocopter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <lastBuildDate>Fri, 09 Oct 2020 23:36:54 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/pid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PID 제어기</title>
+      <link>https://flyingmonocopter.github.io/posts/pidcontrol/</link>
+      <pubDate>Fri, 09 Oct 2020 23:36:54 +0900</pubDate>
+      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/pidcontrol/</guid>
+      <description>PID 제어기 소프트에웨어 출신들이 드론 제어를 공부하다보면 제어기와 필터라는 장벽을 만나게 된다. 주로 기계과에서 배우는 내용이라고 하는데, 나는 이쪽 배경지식이 전혀 없는 상태여서 무척 어겹지만 신기하기만 했다.
+드론 관련 소프트웨어라고 하면 다양한 분야가 있다. 제어 쪽은 펌웨어라고 하는 C/C++ 로 작성된 소프트웨어가 있는데 이는 FC(Flight Controller) 컴퓨터에서 동작한다. 복잡한 일을 해야 하는 드론은 온보드 컴퓨터(라즈베리파이 등의 소형 컴퓨터)를 가지고 있는데 이는 FC 와 통신하며 외부망(LTE, WiFi)과도 통신하고 이미지처리 등의 일을 하게 된다.</description>
+    </item>
+    
+  </channel>
+</rss>

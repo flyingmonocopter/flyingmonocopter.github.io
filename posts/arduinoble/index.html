@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino BLE 이해  | Flying Monocopter</title>
+  <meta name="description" content="Flying Monocopter 'Arduino BLE 이해'을 한 번 살펴보세요.">
+  <meta property="og:title" content="Arduino BLE 이해">
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-01-22">
+  
+  <meta property="og:description" content="Flying Monocopter 'Arduino BLE 이해'을 한 번 살펴보세요.">
+  <meta property="og:url" content="https://flyingmonocopter.github.io/posts/arduinoble/">
+  <meta property="og:site_name" content="Flying Monocopter">
+  
+  <meta property="og:image" content="https://flyingmonocopter.github.io/images/thumbnail.png">
+  
+  
+  <meta property="og:tags" content="arduino">
+  
+  <meta property="og:tags" content="ble">
+  
+  <meta property="og:tags" content="iot">
+  
+  <meta property="og:tags" content="아두이노">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://flyingmonocopter.github.io/posts/arduinoble/">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/agate.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180510293-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-180510293-1');
+  </script>
+  
+  
+  <script type="text/javascript">
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.className === 'menu')
+      e.className = 'menu hidden';
+    else
+      e.className = 'menu';
+  }
+  </script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo burger">
+      <a href="/">
+        <img src="/images/logo.png" height="34px" />
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="toggle_visibility('menu')">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="menu" class="menu hidden">
+      <ul>
+        <li><a href="/posts">POSTS...</a></li>
+        <li><a href="/categories">@CATEGORIES</a></li>
+        <li><a href="/tags">#TAGS</a></li>
+        <li><a href="/about">{ABOUT}</a></li>
+      </ul>
+      <input class="search" id="search-input" type="search" placeholder="검색어" value="">
+    </div>
+  </div>
+
+
+<div class="post">
+  <div class="post-title">
+    <a href="https://flyingmonocopter.github.io/posts/arduinoble/">
+      <img src="/images/post-title-icon.png" />
+      <div class="post-meta">
+        <time>
+          
+          2020년 01월 22일 21시 47분
+          
+        </time>
+        <h1>Arduino BLE 이해</h1>
+      </div>
+    </a>
+  </div>
+  
+  <div class="post-toc">
+    <span class="title">차례</span>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#첫번째-ble">첫번째 BLE</a></li>
+    <li><a href="#ble-는-bt-가-아니다">BLE 는 BT 가 아니다</a></li>
+    <li><a href="#keywish-ble-nano-소개">Keywish BLE Nano 소개</a></li>
+  </ul>
+</nav>
+  </div>
+  
+  <section class="post-content">
+    <p>BLE 초보자를 위한 글</p>
+<h2 id="첫번째-ble">첫번째 BLE</h2>
+<p>5년전 DFRobot 에서 Bluno Nano 라는 제품을 구입했다. Bluno 의 BLE 는 단순히 시리얼 인터페이스로 연결되어있으며 USB Serial TX/RX 를 공유한다. Github 에서 예제 코드를 다운받자.</p>
+<p><a href="https://github.com/DFRobot/BlunoBasicDemo">https://github.com/DFRobot/BlunoBasicDemo</a></p>
+<p>아두이노 코드를 살펴보면 다음과 같다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>() {
+ <span style="color:#66d9ef">if</span>(Serial.available()) {
+   byte data <span style="color:#f92672">=</span> Serial.read();
+  Serial.write(data); <span style="color:#75715e">//send what has been received
+</span><span style="color:#75715e"></span> }
+}</code></pre></div>
+<p>아두이노 코드는 엄청나게 간단하다.</p>
+<p>이제는 Android/iOS 쪽 프로그래밍을 해야 한다. 역시 예제 코드를 살펴보다가 간단한 로봇을 만들 수 있었다.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/C_5ggnbI0Lg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Android 쪽 코드를 살펴보다보면, 그냥 Bluetooth SPP (Serial Port Profile) 이 아니라는 것을 알게 되었다.
+이건 뭐람&hellip; BLE 공부를 조금 더 해보아야 한다.</p>
+<h2 id="ble-는-bt-가-아니다">BLE 는 BT 가 아니다</h2>
+<p>아두이노 입장에서 보면 BT 와 BLE 는 모두 UART 인터페이스를 사용한다.</p>
+<p>BT SPP 를 이용하려면 BT 와 연결한다. 그러면 해당 디바이스 파일 (예: /dev/tty.HC-05-SPPDev) 이 생긴다.
+이 파일을 읽고 쓰면 된다.</p>
+<p>BLE 는 Central 장치와 Peripheral 장치로 구분된다. Central 장치가 Scan 하면 Peripheral 은 자신의 정보를 응답한다.
+이 때 Central 은 Peripheral 의 Characteristics 를 얻어온다. 이러한 과정을 통해 Central 은 Peripheral 과 연결한다.
+정해진 시간이 흐르면 이 연결은 끊어진다.</p>
+<p>Peripheral 장치의 예는 센서이다. Central 장치(스마트폰)에서 온도센서를 접근하기 위해서 주기적으로 Scan 한다.
+센서는 이에 대한 응답을 보낸다. 만일 스마트폰이 원하는 Characteristics 이라면 데이터를 얻고 연결을 끊는다.
+<em><strong>연결 -&gt; 데이터 -&gt; 연결끊김</strong></em> 과정이 BLE Connection 이다. 이 과정은 짧은시간동안 일어나며 대부분의 시간동안 장치는 Sleep 상태.
+이는 BLE 장치의 저전력을 가능하게 한다.</p>
+<figure>
+    <img src="/images/posts/ble-bulletin-board-model.png"
+         alt="BLE model"/> <figcaption>
+            <p>from <a href="https://www.arduino.cc/en/Reference/ArduinoBLE">https://www.arduino.cc/en/Reference/ArduinoBLE</a></p>
+        </figcaption>
+</figure>
+
+<p>이제 간단히 BLE 장치를 이해했다.</p>
+<blockquote>
+<p>최근에 나오는 Arduino Nano 33 IoT, 33 BLE 제품에서 BLE 를 다루는 방법은 Bluno 처럼 간단하지 않다.
+이 제품은 Peripheral 로 동작하는데 있어서 Characteristics 를 커스터마이징 할 수 있다.
+아두이노 장치에 온도센서를 연결했을 때, Central 장치가 Scan 을 보내오면 이 아두이노 Peripheral 장치는 &ldquo;나는 온도 장치다&quot;라고 알려준다.
+다른 센서를 연결한다면 &ldquo;나는 다른 센서 장치다&quot;라고 알려줘야 한다.
+이와 같이 Characteristic 을 통해서 장치가 어떠한 장치인가를 알 수 있는데, 많은 경우 이미 GATT 에서 정의하고 있다.
+Bluno 는 내장된 BLE 칩에 Serial 장치라는 Characteristic 을 가지고 있다. 이를 바꾸려면 Firmware 를 수정해야한다.</p>
+</blockquote>
+<h2 id="keywish-ble-nano-소개">Keywish BLE Nano 소개</h2>
+<p>Keywish 에서 Bluno 와 같은 BLE 내장 아두이노를 $5 이하의 가격에 판매한다.
+왼쪽부터 Bluno Nano, Arduno Nano, BLE Nano 이다.</p>
+<figure>
+    <img src="/images/posts/ble-arduinos.png"
+         alt="BLE arduinos"/> 
+</figure>
+
+<p>BLE Nano 는 아두이노에 익숙하면서 처음 BLE 를 접하는 이에게 적절한 제품이라 생각한다.</p>
+<p>나아가서 자신만의 서비스 GATT 에서 정의된 UUID 를 사용하고 싶다면 Arduino Nano 33, ESP32, Intel Curio 등을 사용할 수 있을 것이다.</p>
+
+  </section>
+
+
+  <div class="post-meta-code">
+  
+    <div>
+      <i>관련 글 : </i>
+      
+      
+      
+      <a class="right" href="https://flyingmonocopter.github.io/posts/arduinoiot/" rel="next">
+        다음글 : <span>Arduino BLE IOT 프로그래밍</span>
+      </a>
+      
+      
+    </div>
+  
+
+  
+    <div>
+      <i>카테고리 : </i>
+      
+      
+      <a href="https://flyingmonocopter.github.io/categories/arduino">[arduino]</a>
+      
+    </div>
+  
+
+  
+    <div>
+      <i>태그 : </i>
+      
+      
+      <a href="https://flyingmonocopter.github.iotags/arduino">#arduino</a>
+      
+      <a href="https://flyingmonocopter.github.iotags/ble">#ble</a>
+      
+      <a href="https://flyingmonocopter.github.iotags/iot">#iot</a>
+      
+      <a href="https://flyingmonocopter.github.iotags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8">#아두이노</a>
+      
+      
+    </div>
+  
+
+  
+    <div>
+      <i>참고 글 : </i>
+      
+      <a href="https://medium.com/@doojin.kang/arduino-ble-cc1f850dd9e0">https://medium.com/@doojin.kang/arduino-ble-cc1f850dd9e0</a>
+      
+    </div>
+  
+
+  </div>
+
+
+
+  <div class="post-comment">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "flying-monocopter" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+</div>
+
+
+<footer class="footer">
+  <div class="copyright">
+    <a href="https://https://gohugo.io/"><img src="/images/hugo-logo-wide.svg" height=20px></a>
+  </div>
+  <div class="copyright">
+    HUGO THEME by COPYRIGHT (C) <a href="https://blog.lulab.net">DONGGEUN,BANG (LUBANG).</a> ALL RIGHTS RESERVED.
+  </div>
+  <div class="share">
+    FLYING MONOCOPTER :
+    <a href="https://github.com/flyingmonocopter" title="Github" target="_blank"><i class="fa fa-github"></i> GITHUB </a> &nbsp;
+    <a href="mailto:flyingmonocopter@gmail.com" title="Email" target="_blank"><i class="fa fa-envelope"></i> mail</a>
+  </div>
+</footer>
+</body>
+</html>
+

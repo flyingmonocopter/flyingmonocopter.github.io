@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>arduino on Flying Monocopter</title>
+    <link>https://flyingmonocopter.github.io/tags/arduino/</link>
+    <description>Recent content in arduino on Flying Monocopter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <lastBuildDate>Mon, 02 Mar 2020 21:47:22 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arduino BLE 스크래치 프로그래밍</title>
+      <link>https://flyingmonocopter.github.io/posts/arduinoscratch/</link>
+      <pubDate>Mon, 02 Mar 2020 21:47:22 +0900</pubDate>
+      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/arduinoscratch/</guid>
+      <description>스크래치 3.0 Extension 프로그래밍 소개
+스크래치 3.0 스크래치 3.0 은 2.0 과 다르게 Web 어플리케이션이다. 즉 웹에서 동작한다. 이는 매우 훌륭한데 단점이 있다면 하드웨어 자원을 Native 어플리케이션처럼 마음대로 쓸 수 없다. 다행하게도 스크래치 링크(Scratch Link) 라는 프로그램을 제공하고 있어, BT/BLE 장치와 통신이 가능하다.
+스크래치 링크는 Native 어플리케이션으로 BT/BLE 장치를 관리한다. 스크래치 링크는 웹소켓 채널을 제공하는데 스크래치 3.0 은 이 웹소켓을 통해서 장치와 통신할 수 있다.
+  RGB LED 제어 예제 스크래치 3.</description>
+    </item>
+    
+    <item>
+      <title>Arduino BLE IOT 프로그래밍</title>
+      <link>https://flyingmonocopter.github.io/posts/arduinoiot/</link>
+      <pubDate>Sat, 25 Jan 2020 21:47:22 +0900</pubDate>
+      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/arduinoiot/</guid>
+      <description>NodeJS 로 IOT 프로그래밍
+BLE 를 IOT 장치로 사용하기 BLE 관련 프로그래밍을 조사해면, 대부분의 Central 장치에 대한 소스는 Android 와 iOS 중심으로 되어있다. 최근 Linux, MacOS, Windows 는 BLE 를 지원한다. 그래서 PC 를 BLE central 장치로 사용하려고 한다. 집안에서 서비스를 한다고 가정했을 때, PC 에서 BLE periperal 을 직접 제어할 수 있으면 좋겠다.
+프로그래밍 도구로는 NodeJS 를 쓸 것이다. 파이선도 가능하지만 웹을 생각한다면 Node 가 좀 더 낫다.
+Bluno 나 BLE Nano 를 peripheral 장치로 사용할 것이다.</description>
+    </item>
+    
+    <item>
+      <title>Arduino BLE 이해</title>
+      <link>https://flyingmonocopter.github.io/posts/arduinoble/</link>
+      <pubDate>Wed, 22 Jan 2020 21:47:22 +0900</pubDate>
+      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/arduinoble/</guid>
+      <description>BLE 초보자를 위한 글
+첫번째 BLE 5년전 DFRobot 에서 Bluno Nano 라는 제품을 구입했다. Bluno 의 BLE 는 단순히 시리얼 인터페이스로 연결되어있으며 USB Serial TX/RX 를 공유한다. Github 에서 예제 코드를 다운받자.
+https://github.com/DFRobot/BlunoBasicDemo
+아두이노 코드를 살펴보면 다음과 같다.
+void loop() { if(Serial.available()) { byte data = Serial.read(); Serial.write(data); //send what has been received  } } 아두이노 코드는 엄청나게 간단하다.
+이제는 Android/iOS 쪽 프로그래밍을 해야 한다. 역시 예제 코드를 살펴보다가 간단한 로봇을 만들 수 있었다.</description>
+    </item>
+    
+  </channel>
+</rss>

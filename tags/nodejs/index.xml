@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs on Flying Monocopter</title>
+    <link>https://flyingmonocopter.github.io/tags/nodejs/</link>
+    <description>Recent content in nodejs on Flying Monocopter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <lastBuildDate>Sat, 25 Jan 2020 21:47:22 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arduino BLE IOT 프로그래밍</title>
+      <link>https://flyingmonocopter.github.io/posts/arduinoiot/</link>
+      <pubDate>Sat, 25 Jan 2020 21:47:22 +0900</pubDate>
+      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/arduinoiot/</guid>
+      <description>NodeJS 로 IOT 프로그래밍
+BLE 를 IOT 장치로 사용하기 BLE 관련 프로그래밍을 조사해면, 대부분의 Central 장치에 대한 소스는 Android 와 iOS 중심으로 되어있다. 최근 Linux, MacOS, Windows 는 BLE 를 지원한다. 그래서 PC 를 BLE central 장치로 사용하려고 한다. 집안에서 서비스를 한다고 가정했을 때, PC 에서 BLE periperal 을 직접 제어할 수 있으면 좋겠다.
+프로그래밍 도구로는 NodeJS 를 쓸 것이다. 파이선도 가능하지만 웹을 생각한다면 Node 가 좀 더 낫다.
+Bluno 나 BLE Nano 를 peripheral 장치로 사용할 것이다.</description>
+    </item>
+    
+  </channel>
+</rss>
