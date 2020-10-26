@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Flying Monocopter</title>
+    <link>https://flyingmonocopter.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Flying Monocopter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <lastBuildDate>Mon, 26 Oct 2020 13:00:01 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 에 React App 사용하기</title>
+      <link>https://flyingmonocopter.github.io/posts/hugoembedreact/</link>
+      <pubDate>Mon, 26 Oct 2020 13:00:01 +0900</pubDate>
+      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/hugoembedreact/</guid>
+      <description>Hugo 를 선택한 이유  Mark down 언어를 지원한다. 글 내에서 Shortcode 를 사용할 수 있다.  위에서 이야기한 Mark down 언어를 지원하는 점은 장점이지만, MD 내에서 HTML 을 직접 사용할 수 없는 제약도 있다.</description>
+    </item>
+    
+  </channel>
+</rss>

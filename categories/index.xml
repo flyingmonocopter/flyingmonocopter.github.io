@@ -8,7 +8,16 @@
     <language>ko-kr</language>
     <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
     <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
-    <lastBuildDate>Fri, 09 Oct 2020 23:36:54 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Oct 2020 13:00:01 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>web</title>
+      <link>https://flyingmonocopter.github.io/categories/web/</link>
+      <pubDate>Mon, 26 Oct 2020 13:00:01 +0900</pubDate>
+      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/categories/web/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>monocopter</title>
       <link>https://flyingmonocopter.github.io/categories/monocopter/</link>
@@ -21,7 +30,7 @@
     <item>
       <title>programming</title>
       <link>https://flyingmonocopter.github.io/categories/programming/</link>
-      <pubDate>Wed, 19 Aug 2020 21:47:22 +0900</pubDate>
+      <pubDate>Wed, 19 Aug 2020 09:31:22 +0900</pubDate>
       <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/categories/programming/</guid>
       <description></description>
@@ -30,7 +39,7 @@
     <item>
       <title>arduino</title>
       <link>https://flyingmonocopter.github.io/categories/arduino/</link>
-      <pubDate>Mon, 02 Mar 2020 21:47:22 +0900</pubDate>
+      <pubDate>Mon, 02 Mar 2020 22:17:22 +0900</pubDate>
       <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/categories/arduino/</guid>
       <description></description>

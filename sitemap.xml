@@ -4,17 +4,67 @@
   
   <url>
     <loc>https://flyingmonocopter.github.io/categories/</loc>
-    <lastmod>2020-10-09T23:36:54+09:00</lastmod>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/</loc>
-    <lastmod>2020-10-09T23:36:54+09:00</lastmod>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/hugo/</loc>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/posts/hugoembedreact/</loc>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/javascript/</loc>
-    <lastmod>2020-10-09T23:36:54+09:00</lastmod>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/posts/</loc>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/react/</loc>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/shortcode/</loc>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/</loc>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/web/</loc>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/categories/web/</loc>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/%EB%A6%AC%EC%95%A1%ED%8A%B8/</loc>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</loc>
+    <lastmod>2020-10-26T13:00:01+09:00</lastmod>
   </url>
   
   <url>
@@ -33,133 +83,108 @@
   </url>
   
   <url>
-    <loc>https://flyingmonocopter.github.io/posts/</loc>
-    <lastmod>2020-10-09T23:36:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://flyingmonocopter.github.io/tags/react/</loc>
-    <lastmod>2020-10-09T23:36:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://flyingmonocopter.github.io/tags/</loc>
-    <lastmod>2020-10-09T23:36:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://flyingmonocopter.github.io/tags/%EB%A6%AC%EC%95%A1%ED%8A%B8/</loc>
-    <lastmod>2020-10-09T23:36:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://flyingmonocopter.github.io/tags/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</loc>
-    <lastmod>2020-10-09T23:36:54+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://flyingmonocopter.github.io/about/</loc>
     <lastmod>2020-10-09T23:29:13+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/numpy/</loc>
-    <lastmod>2020-08-19T21:47:22+09:00</lastmod>
+    <lastmod>2020-08-19T09:31:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/object/</loc>
-    <lastmod>2020-08-19T21:47:22+09:00</lastmod>
+    <lastmod>2020-08-19T09:31:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/operator/</loc>
-    <lastmod>2020-08-19T21:47:22+09:00</lastmod>
+    <lastmod>2020-08-19T09:31:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/operator-overloading/</loc>
-    <lastmod>2020-08-19T21:47:22+09:00</lastmod>
+    <lastmod>2020-08-19T09:31:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/categories/programming/</loc>
-    <lastmod>2020-08-19T21:47:22+09:00</lastmod>
+    <lastmod>2020-08-19T09:31:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/python/</loc>
-    <lastmod>2020-08-19T21:47:22+09:00</lastmod>
+    <lastmod>2020-08-19T09:31:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/%EA%B0%9D%EC%B2%B4/</loc>
-    <lastmod>2020-08-19T21:47:22+09:00</lastmod>
+    <lastmod>2020-08-19T09:31:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%84%A0/</loc>
-    <lastmod>2020-08-19T21:47:22+09:00</lastmod>
+    <lastmod>2020-08-19T09:31:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/posts/pythonoperatoroverloading/</loc>
-    <lastmod>2020-08-19T21:47:22+09:00</lastmod>
+    <lastmod>2020-08-19T09:31:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/arduino/</loc>
-    <lastmod>2020-03-02T21:47:22+09:00</lastmod>
+    <lastmod>2020-03-02T22:17:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/categories/arduino/</loc>
-    <lastmod>2020-03-02T21:47:22+09:00</lastmod>
+    <lastmod>2020-03-02T22:17:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/posts/arduinoscratch/</loc>
-    <lastmod>2020-03-02T21:47:22+09:00</lastmod>
+    <lastmod>2020-03-02T22:17:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/ble/</loc>
-    <lastmod>2020-03-02T21:47:22+09:00</lastmod>
+    <lastmod>2020-03-02T22:17:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/scratch/</loc>
-    <lastmod>2020-03-02T21:47:22+09:00</lastmod>
+    <lastmod>2020-03-02T22:17:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/%EC%8A%A4%ED%81%AC%EB%9E%98%EC%B9%98/</loc>
-    <lastmod>2020-03-02T21:47:22+09:00</lastmod>
+    <lastmod>2020-03-02T22:17:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</loc>
-    <lastmod>2020-03-02T21:47:22+09:00</lastmod>
+    <lastmod>2020-03-02T22:17:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/posts/arduinoiot/</loc>
-    <lastmod>2020-01-25T21:47:22+09:00</lastmod>
+    <lastmod>2020-01-25T11:37:12+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/bleno/</loc>
-    <lastmod>2020-01-25T21:47:22+09:00</lastmod>
+    <lastmod>2020-01-25T11:37:12+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/iot/</loc>
-    <lastmod>2020-01-25T21:47:22+09:00</lastmod>
+    <lastmod>2020-01-25T11:37:12+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/nodejs/</loc>
-    <lastmod>2020-01-25T21:47:22+09:00</lastmod>
+    <lastmod>2020-01-25T11:37:12+09:00</lastmod>
   </url>
   
   <url>
