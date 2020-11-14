@@ -6,14 +6,14 @@
     <description>Recent content in noble on Flying Monocopter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
-    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
     <lastBuildDate>Sat, 25 Jan 2020 11:37:12 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/noble/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arduino BLE IOT 프로그래밍</title>
       <link>https://flyingmonocopter.github.io/posts/arduinoiot/</link>
       <pubDate>Sat, 25 Jan 2020 11:37:12 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/arduinoiot/</guid>
       <description>NodeJS 로 IOT 프로그래밍
 BLE 를 IOT 장치로 사용하기 BLE 관련 프로그래밍을 조사해면, 대부분의 Central 장치에 대한 소스는 Android 와 iOS 중심으로 되어있다. 최근 Linux, MacOS, Windows 는 BLE 를 지원한다.</description>

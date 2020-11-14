@@ -6,14 +6,14 @@
     <description>Recent content in monocopter on Flying Monocopter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
-    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
     <lastBuildDate>Fri, 09 Oct 2020 23:36:54 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/categories/monocopter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PID 제어기</title>
       <link>https://flyingmonocopter.github.io/posts/pidcontrol/</link>
       <pubDate>Fri, 09 Oct 2020 23:36:54 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/pidcontrol/</guid>
       <description>PID 제어기 드론 제어를 공부하다보면 제어기와 필터라는 장벽을 만나게 된다. 주로 기계과에서 배우는 내용이라고 하는데, 나는 이쪽 배경지식이 전혀 없는 상태여서 어렵고도 신기하기만 했다.
 드론 관련 소프트웨어라고 하면 다양한 분야가 있다.</description>

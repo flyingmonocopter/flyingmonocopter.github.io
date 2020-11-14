@@ -6,14 +6,14 @@
     <description>Recent content in 객체 on Flying Monocopter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
-    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
     <lastBuildDate>Wed, 19 Aug 2020 09:31:22 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/%EA%B0%9D%EC%B2%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>파이선 연산자 오버로딩 이해</title>
       <link>https://flyingmonocopter.github.io/posts/pythonoperatoroverloading/</link>
       <pubDate>Wed, 19 Aug 2020 09:31:22 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/pythonoperatoroverloading/</guid>
       <description>파이선 객체와 연산자 오버로딩 예제
 주의 : 파이선 구현체를 살펴보지는 않았기 때문에, 의도하지 않은 오류가 포함되어 있을 수 있습니다.

@@ -6,14 +6,14 @@
     <description>Recent content on Flying Monocopter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
-    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
     <lastBuildDate>Mon, 26 Oct 2020 13:00:01 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 에 React App 사용하기</title>
       <link>https://flyingmonocopter.github.io/posts/hugoembedreact/</link>
       <pubDate>Mon, 26 Oct 2020 13:00:01 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/hugoembedreact/</guid>
       <description>Hugo 를 선택한 이유  Mark down 언어를 지원한다. 글 내에서 Shortcode 를 사용할 수 있다.  위에서 이야기한 Mark down 언어를 지원하는 점은 장점이지만, MD 내에서 HTML 을 직접 사용할 수 없는 제약도 있다.</description>
     </item>
@@ -22,7 +22,7 @@
       <title>PID 제어기</title>
       <link>https://flyingmonocopter.github.io/posts/pidcontrol/</link>
       <pubDate>Fri, 09 Oct 2020 23:36:54 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/pidcontrol/</guid>
       <description>PID 제어기 드론 제어를 공부하다보면 제어기와 필터라는 장벽을 만나게 된다. 주로 기계과에서 배우는 내용이라고 하는데, 나는 이쪽 배경지식이 전혀 없는 상태여서 어렵고도 신기하기만 했다.
 드론 관련 소프트웨어라고 하면 다양한 분야가 있다.</description>
@@ -32,7 +32,7 @@
       <title>About</title>
       <link>https://flyingmonocopter.github.io/about/</link>
       <pubDate>Fri, 09 Oct 2020 23:29:13 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/about/</guid>
       <description>  </description>
     </item>
@@ -41,7 +41,7 @@
       <title>파이선 연산자 오버로딩 이해</title>
       <link>https://flyingmonocopter.github.io/posts/pythonoperatoroverloading/</link>
       <pubDate>Wed, 19 Aug 2020 09:31:22 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/pythonoperatoroverloading/</guid>
       <description>파이선 객체와 연산자 오버로딩 예제
 주의 : 파이선 구현체를 살펴보지는 않았기 때문에, 의도하지 않은 오류가 포함되어 있을 수 있습니다.
@@ -52,7 +52,7 @@
       <title>Arduino BLE 스크래치 프로그래밍</title>
       <link>https://flyingmonocopter.github.io/posts/arduinoscratch/</link>
       <pubDate>Mon, 02 Mar 2020 22:17:22 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/arduinoscratch/</guid>
       <description>스크래치 3.0 Extension 프로그래밍 소개
 스크래치 3.0 스크래치 3.0 은 2.0 과 다르게 Web 어플리케이션이다. 즉 웹에서 동작한다. 이는 매우 훌륭한데 단점이 있다면 하드웨어 자원을 Native 어플리케이션처럼 마음대로 쓸 수 없다.</description>
@@ -62,7 +62,7 @@
       <title>Arduino BLE IOT 프로그래밍</title>
       <link>https://flyingmonocopter.github.io/posts/arduinoiot/</link>
       <pubDate>Sat, 25 Jan 2020 11:37:12 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/arduinoiot/</guid>
       <description>NodeJS 로 IOT 프로그래밍
 BLE 를 IOT 장치로 사용하기 BLE 관련 프로그래밍을 조사해면, 대부분의 Central 장치에 대한 소스는 Android 와 iOS 중심으로 되어있다. 최근 Linux, MacOS, Windows 는 BLE 를 지원한다.</description>
@@ -72,7 +72,7 @@ BLE 를 IOT 장치로 사용하기 BLE 관련 프로그래밍을 조사해면, �
       <title>Arduino BLE 이해</title>
       <link>https://flyingmonocopter.github.io/posts/arduinoble/</link>
       <pubDate>Wed, 22 Jan 2020 21:47:22 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/arduinoble/</guid>
       <description>BLE 초보자를 위한 글
 첫번째 BLE 5년전 DFRobot 에서 Bluno Nano 라는 제품을 구입했다. Bluno 의 BLE 는 단순히 시리얼 인터페이스로 연결되어있으며 USB Serial TX/RX 를 공유한다. Github 에서 예제 코드를 다운받자.</description>

@@ -6,14 +6,14 @@
     <description>Recent content in iot on Flying Monocopter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
-    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
     <lastBuildDate>Sat, 25 Jan 2020 11:37:12 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arduino BLE IOT 프로그래밍</title>
       <link>https://flyingmonocopter.github.io/posts/arduinoiot/</link>
       <pubDate>Sat, 25 Jan 2020 11:37:12 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/arduinoiot/</guid>
       <description>NodeJS 로 IOT 프로그래밍
 BLE 를 IOT 장치로 사용하기 BLE 관련 프로그래밍을 조사해면, 대부분의 Central 장치에 대한 소스는 Android 와 iOS 중심으로 되어있다. 최근 Linux, MacOS, Windows 는 BLE 를 지원한다.</description>
@@ -23,7 +23,7 @@ BLE 를 IOT 장치로 사용하기 BLE 관련 프로그래밍을 조사해면, �
       <title>Arduino BLE 이해</title>
       <link>https://flyingmonocopter.github.io/posts/arduinoble/</link>
       <pubDate>Wed, 22 Jan 2020 21:47:22 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/arduinoble/</guid>
       <description>BLE 초보자를 위한 글
 첫번째 BLE 5년전 DFRobot 에서 Bluno Nano 라는 제품을 구입했다. Bluno 의 BLE 는 단순히 시리얼 인터페이스로 연결되어있으며 USB Serial TX/RX 를 공유한다. Github 에서 예제 코드를 다운받자.</description>

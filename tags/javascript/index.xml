@@ -6,14 +6,14 @@
     <description>Recent content in javascript on Flying Monocopter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <managingEditor>flyingmonocopter@gmail.com (Flying Monocopter)</managingEditor>
-    <webMaster>flyingmonocopter@gmail.com (Flying Monocopter)</webMaster>
+    <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
     <lastBuildDate>Mon, 26 Oct 2020 13:00:01 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 에 React App 사용하기</title>
       <link>https://flyingmonocopter.github.io/posts/hugoembedreact/</link>
       <pubDate>Mon, 26 Oct 2020 13:00:01 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/hugoembedreact/</guid>
       <description>Hugo 를 선택한 이유  Mark down 언어를 지원한다. 글 내에서 Shortcode 를 사용할 수 있다.  위에서 이야기한 Mark down 언어를 지원하는 점은 장점이지만, MD 내에서 HTML 을 직접 사용할 수 없는 제약도 있다.</description>
     </item>
@@ -22,7 +22,7 @@
       <title>PID 제어기</title>
       <link>https://flyingmonocopter.github.io/posts/pidcontrol/</link>
       <pubDate>Fri, 09 Oct 2020 23:36:54 +0900</pubDate>
-      <author>flyingmonocopter@gmail.com (Flying Monocopter)</author>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/posts/pidcontrol/</guid>
       <description>PID 제어기 드론 제어를 공부하다보면 제어기와 필터라는 장벽을 만나게 된다. 주로 기계과에서 배우는 내용이라고 하는데, 나는 이쪽 배경지식이 전혀 없는 상태여서 어렵고도 신기하기만 했다.
 드론 관련 소프트웨어라고 하면 다양한 분야가 있다.</description>
