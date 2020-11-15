@@ -8,7 +8,16 @@
     <language>ko-kr</language>
     <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
     <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
-    <lastBuildDate>Mon, 26 Oct 2020 13:00:01 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Nov 2020 23:12:04 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SVELTE from React</title>
+      <link>https://flyingmonocopter.github.io/posts/sveltefromreact/</link>
+      <pubDate>Sat, 07 Nov 2020 23:12:04 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/sveltefromreact/</guid>
+      <description>React 16 과 Redux 를 이용해서 앱을 개발하다가 손 뗀지 1년이 지나니 다시 시작하기 좀 부담스러웠다. Redux 는 거의 다 잊어버렸고, 액션 리듀서 용어만 어렴풋이 기억났다. State 과 Prop 메카니즘은 잊지 않고 있었다.</description>
+    </item>
+    
     <item>
       <title>Hugo 에 React App 사용하기</title>
       <link>https://flyingmonocopter.github.io/posts/hugoembedreact/</link>

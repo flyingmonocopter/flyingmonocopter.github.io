@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>svelte on Flying Monocopter</title>
+    <link>https://flyingmonocopter.github.io/tags/svelte/</link>
+    <description>Recent content in svelte on Flying Monocopter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
+    <lastBuildDate>Sat, 07 Nov 2020 23:12:04 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/svelte/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SVELTE from React</title>
+      <link>https://flyingmonocopter.github.io/posts/sveltefromreact/</link>
+      <pubDate>Sat, 07 Nov 2020 23:12:04 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/sveltefromreact/</guid>
+      <description>React 16 과 Redux 를 이용해서 앱을 개발하다가 손 뗀지 1년이 지나니 다시 시작하기 좀 부담스러웠다. Redux 는 거의 다 잊어버렸고, 액션 리듀서 용어만 어렴풋이 기억났다. State 과 Prop 메카니즘은 잊지 않고 있었다.</description>
+    </item>
+    
+  </channel>
+</rss>
