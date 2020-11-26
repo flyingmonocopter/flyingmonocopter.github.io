@@ -197,8 +197,8 @@ React JSX 문법은 HTML Tag 를 아래와 같이 Javascript 코드 안에 넣�
 <h3 id="21-반응성">2.1. 반응성</h3>
 <p>Reactivity 의 사전적 의미는 &ldquo;반응성&rdquo; 즉 어떠한 것에 바로 반응할 수 있는 능력이다.
 Reactivity 를 구성하는 요소에는 &ldquo;상태&rdquo;, &ldquo;뷰&quot;가 있으며 이를 가능하게 해주는 &ldquo;프레임워크&quot;가 있다.
-다시 풀어서 설명하면 어떤 변수(상태) 변화가 있을 때 이를 이용하는(이에 바인딩 되어있는) HTML 컴포넌트(뷰:view)가 (즉각적으로)
-갱신하게 해주는 프레임워크의 능력이라고 이야기할 수 있을 것이다.</p>
+다시 풀어서 설명하면 어떤 변수(상태) 변화가 있을 때 이를 이용하는(이에 바인딩 되어있는) HTML 컴포넌트(뷰:view)를 (바로)
+갱신하는 프레임워크의 능력이라고 이야기할 수 있을 것이다.</p>
 <p>웹 프로그래밍 뿐 아니라 다른 프로그래밍에서도 MVP(모델, 뷰 그리고 프리젠터) 이야기를 한다.
 모델은 상태이며, 뷰는 HTML컴포넌트, 프리젠터는 Reactivity 를 담당한다고 볼 수 있다.</p>
 <blockquote>
@@ -221,7 +221,7 @@ Reactivity 를 구성하는 요소에는 &ldquo;상태&rdquo;, &ldquo;뷰&quot;�
 </ul>
 <h4 id="c-svelte-방식-컴파일을-통해-직접-수정">C. SVELTE 방식 (컴파일을 통해 직접 수정)</h4>
 <ul>
-<li>상태 관리 로직이 들어있다. 상태와 연동되는 HTML 요소는 <em>bind</em> 로 표시되며 컴파일과정에서 업데이트 내용이 들어간다.</li>
+<li>상태 관리 로직이 들어있다. 상태와 연동되는 HTML 요소는 <em>bind</em> 키워드로 표지할 수 있으며 컴파일는 이를 이용해 상태 업데이트 코드를 생성한다.</li>
 <li>키 이벤트가 발생하면 상태를 업데이트 하며, 상태의 dirty 설정이 바뀌어 HTML 이 갱신된다.</li>
 <li>컴파일 과정에서 상태의 dirty 가 변하면 HTML 요소를 수정하는 핸들러가 작동하는 코드가 자동적으로 들어간다.</li>
 <li>결국 HTML 을 직접 수정하도록 되어있다. 따라서 Virtual DOM 을 사용하지 않는다.</li>
@@ -341,6 +341,18 @@ React 에 비해 지원하는 패키지가 적다는 점을 염두하고 SVELTE 
 
 
   <div class="post-meta-code">
+  
+    <div>
+      <i>관련 글 : </i>
+      
+      
+      
+      <a class="right" href="https://flyingmonocopter.github.io/posts/svelteplotly/" rel="next">
+        다음글 : <span>SVELTE plotly.js</span>
+      </a>
+      
+      
+    </div>
   
 
   

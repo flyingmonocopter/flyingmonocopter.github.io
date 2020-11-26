@@ -8,7 +8,18 @@
     <language>ko-kr</language>
     <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
     <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
-    <lastBuildDate>Sat, 07 Nov 2020 23:12:04 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/%EB%A6%AC%EC%95%A1%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2020 21:11:10 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/%EB%A6%AC%EC%95%A1%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SVELTE plotly.js</title>
+      <link>https://flyingmonocopter.github.io/posts/svelteplotly/</link>
+      <pubDate>Tue, 24 Nov 2020 21:11:10 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/svelteplotly/</guid>
+      <description>지난번에 SVELTE plotly.js 가 없어서 프로젝트 마이그레이션이 지연되었다.
+ 그래서 SVELTE 를 조금만 더 파 보기로 했다.
+ SVELTE 로 개발 프로젝트를 하는 것은 없어서, 이미 만들어놓은 React PID controller 를 SVELTE 로 바꿔보기로 했다.</description>
+    </item>
+    
     <item>
       <title>SVELTE from React</title>
       <link>https://flyingmonocopter.github.io/posts/sveltefromreact/</link>

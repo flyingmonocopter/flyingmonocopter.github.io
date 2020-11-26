@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVELTE 버전 PID controller  | Flying Monocopter</title>
+  <meta name="description" content="Flying Monocopter 'SVELTE 버전 PID controller'을 한 번 살펴보세요.">
+  <meta property="og:title" content="SVELTE 버전 PID controller">
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-11-25">
+  
+  <meta property="og:description" content="Flying Monocopter 'SVELTE 버전 PID controller'을 한 번 살펴보세요.">
+  <meta property="og:url" content="https://flyingmonocopter.github.io/posts/sveltepidcontrol/">
+  <meta property="og:site_name" content="Flying Monocopter">
+  
+  <meta property="og:image" content="https://flyingmonocopter.github.io/images/thumbnail.png">
+  
+  
+  <meta property="og:tags" content="svelte">
+  
+  <meta property="og:tags" content="javascript">
+  
+  <meta property="og:tags" content="자바스크립트">
+  
+  <meta property="og:tags" content="plotly">
+  
+  <meta property="og:tags" content="pid">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://flyingmonocopter.github.io/posts/sveltepidcontrol/">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/agate.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180510293-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-180510293-1');
+  </script>
+  
+  
+  <script type="text/javascript">
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.className === 'menu')
+      e.className = 'menu hidden';
+    else
+      e.className = 'menu';
+  }
+  </script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo burger">
+      <a href="/">
+        <img src="/images/logo.png" height="34px" />
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="toggle_visibility('menu')">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="menu" class="menu hidden">
+      <ul>
+        <li><a href="/posts">POSTS...</a></li>
+        <li><a href="/categories">@CATEGORIES</a></li>
+        <li><a href="/tags">#TAGS</a></li>
+        <li><a href="/about">{ABOUT}</a></li>
+      </ul>
+      <input class="search" id="search-input" type="search" placeholder="검색어" value="">
+    </div>
+  </div>
+
+
+<div class="post">
+  <div class="post-title">
+    <a href="https://flyingmonocopter.github.io/posts/sveltepidcontrol/">
+      <img src="/images/post-title-icon.png" />
+      <div class="post-meta">
+        <time>
+          
+          2020년 11월 25일 02시 29분
+          
+        </time>
+        <h1>SVELTE 버전 PID controller</h1>
+      </div>
+    </a>
+  </div>
+  
+  <section class="post-content">
+    <p>PID 제어기 React 버전을 SVELTE 버전으로 바꾸어 보았다.</p>
+<p>Hugo 에 내장시키는 방법은 <em><a href="/posts/hugoembedreact/" title="Hugo 에 React App 사용하기">Hugo 에 React App 사용하기</a></em> 와 같이 shortcode 를 이용한다.</p>
+<link rel='stylesheet' href='/monocopter_svelte/global.css'>
+<link rel='stylesheet' href='/monocopter_svelte/build/bundle.css'>
+<script defer src='/monocopter_svelte/build/bundle.js'></script>
+<div id="root"></div>
+
+
+  </section>
+
+
+  <div class="post-meta-code">
+  
+    <div>
+      <i>관련 글 : </i>
+      
+      
+      <a class="left" href="https://flyingmonocopter.github.io/posts/svelteplotly/" rel="prev">
+        이전글 : <span>SVELTE plotly.js</span>
+      </a>
+      
+      
+      
+    </div>
+  
+
+  
+    <div>
+      <i>카테고리 : </i>
+      
+      
+      <a href="https://flyingmonocopter.github.io//categories/programming">[programming]</a>
+      
+    </div>
+  
+
+  
+    <div>
+      <i>태그 : </i>
+      
+      
+      <a href="https://flyingmonocopter.github.io/tags/svelte">#svelte</a>
+      
+      <a href="https://flyingmonocopter.github.io/tags/javascript">#javascript</a>
+      
+      <a href="https://flyingmonocopter.github.io/tags/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8">#자바스크립트</a>
+      
+      <a href="https://flyingmonocopter.github.io/tags/plotly">#plotly</a>
+      
+      <a href="https://flyingmonocopter.github.io/tags/pid">#pid</a>
+      
+      
+    </div>
+  
+
+  
+    <div>
+      <i>참고 글 : </i>
+      
+      <a href="https://stackoverflow.com/questions/35560305/d3-js-uncaught-typeerror-cannot-read-property-document-of-undefined">https://stackoverflow.com/questions/35560305/d3-js-uncaught-typeerror-cannot-read-property-document-of-undefined</a>
+      
+      <a href="https://rollupjs.org/guide/en/#outputstrict">https://rollupjs.org/guide/en/#outputstrict</a>
+      
+    </div>
+  
+
+  </div>
+
+
+
+
+  <div class="post-comment">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "flying-monocopter" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+
+
+</div>
+
+
+<footer class="footer">
+  <div class="copyright">
+    <a href="https://gohugo.io/"><img src="/images/hugo-logo-wide.svg" height=20px></a>
+  </div>
+  <div class="copyright">
+    HUGO THEME by COPYRIGHT (C) <a href="https://blog.lulab.net">DONGGEUN,BANG (LUBANG).</a> ALL RIGHTS RESERVED.
+  </div>
+  <div class="share">
+    FLYING MONOCOPTER :
+    <a href="https://github.com/doojinkang" title="Github" target="_blank"><i class="fa fa-github"></i> GITHUB </a> &nbsp;
+    <a href="mailto:doojin.kang@gmail.com" title="Email" target="_blank"><i class="fa fa-envelope"></i> mail</a>
+  </div>
+</footer>
+</body>
+</html>
+
