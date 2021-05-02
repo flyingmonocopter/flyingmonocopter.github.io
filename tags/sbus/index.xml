@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sbus on Flying Monocopter</title>
+    <link>https://flyingmonocopter.github.io/tags/sbus/</link>
+    <description>Recent content in sbus on Flying Monocopter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
+    <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
+    <lastBuildDate>Fri, 30 Apr 2021 23:45:52 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/sbus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arduino 드론</title>
+      <link>https://flyingmonocopter.github.io/posts/arduinodrone/</link>
+      <pubDate>Fri, 30 Apr 2021 23:45:52 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/posts/arduinodrone/</guid>
+      <description>드론을 처음 접한 것은 2017년이다. 아는 분이 드론 프로젝트를 한다고 해서 조인 했던 것이 계기가 되었다. 사실 그때 한 것은 드론을 몰라도 하는 것이었고, 웹 서비스 관련 내용이 주된 내용이었다. 미션 자동비행을 위한 웹 인터페이스 개발이었다.</description>
+    </item>
+    
+  </channel>
+</rss>

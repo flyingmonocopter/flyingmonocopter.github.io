@@ -8,7 +8,70 @@
     <language>ko-kr</language>
     <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
     <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
-    <lastBuildDate>Sun, 17 Jan 2021 13:21:10 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Apr 2021 23:45:52 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>arduino</title>
+      <link>https://flyingmonocopter.github.io/tags/arduino/</link>
+      <pubDate>Fri, 30 Apr 2021 23:45:52 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drone</title>
+      <link>https://flyingmonocopter.github.io/tags/drone/</link>
+      <pubDate>Fri, 30 Apr 2021 23:45:52 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/drone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sbus</title>
+      <link>https://flyingmonocopter.github.io/tags/sbus/</link>
+      <pubDate>Fri, 30 Apr 2021 23:45:52 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/sbus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>taranis</title>
+      <link>https://flyingmonocopter.github.io/tags/taranis/</link>
+      <pubDate>Fri, 30 Apr 2021 23:45:52 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/taranis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>드론</title>
+      <link>https://flyingmonocopter.github.io/tags/%EB%93%9C%EB%A1%A0/</link>
+      <pubDate>Fri, 30 Apr 2021 23:45:52 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/%EB%93%9C%EB%A1%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>아두이노</title>
+      <link>https://flyingmonocopter.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</link>
+      <pubDate>Fri, 30 Apr 2021 23:45:52 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>조종기</title>
+      <link>https://flyingmonocopter.github.io/tags/%EC%A1%B0%EC%A2%85%EA%B8%B0/</link>
+      <pubDate>Fri, 30 Apr 2021 23:45:52 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/%EC%A1%B0%EC%A2%85%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>javascript</title>
       <link>https://flyingmonocopter.github.io/tags/javascript/</link>
@@ -163,15 +226,6 @@
     </item>
     
     <item>
-      <title>arduino</title>
-      <link>https://flyingmonocopter.github.io/tags/arduino/</link>
-      <pubDate>Mon, 02 Mar 2020 22:17:22 +0900</pubDate>
-      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
-      <guid>https://flyingmonocopter.github.io/tags/arduino/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ble</title>
       <link>https://flyingmonocopter.github.io/tags/ble/</link>
       <pubDate>Mon, 02 Mar 2020 22:17:22 +0900</pubDate>
@@ -195,15 +249,6 @@
       <pubDate>Mon, 02 Mar 2020 22:17:22 +0900</pubDate>
       <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/tags/%EC%8A%A4%ED%81%AC%EB%9E%98%EC%B9%98/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>아두이노</title>
-      <link>https://flyingmonocopter.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</link>
-      <pubDate>Mon, 02 Mar 2020 22:17:22 +0900</pubDate>
-      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
-      <guid>https://flyingmonocopter.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</guid>
       <description></description>
     </item>
     

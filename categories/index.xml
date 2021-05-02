@@ -8,7 +8,16 @@
     <language>ko-kr</language>
     <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
     <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
-    <lastBuildDate>Sun, 17 Jan 2021 13:21:10 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Apr 2021 23:45:52 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>arduino</title>
+      <link>https://flyingmonocopter.github.io/categories/arduino/</link>
+      <pubDate>Fri, 30 Apr 2021 23:45:52 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/categories/arduino/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>monocopter</title>
       <link>https://flyingmonocopter.github.io/categories/monocopter/</link>
@@ -33,15 +42,6 @@
       <pubDate>Mon, 26 Oct 2020 13:00:01 +0900</pubDate>
       <author>doojin.kang@gmail.com (Flying Monocopter)</author>
       <guid>https://flyingmonocopter.github.io/categories/web/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>arduino</title>
-      <link>https://flyingmonocopter.github.io/categories/arduino/</link>
-      <pubDate>Mon, 02 Mar 2020 22:17:22 +0900</pubDate>
-      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
-      <guid>https://flyingmonocopter.github.io/categories/arduino/</guid>
       <description></description>
     </item>
     

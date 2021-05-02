@@ -3,13 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://flyingmonocopter.github.io/tags/arduino/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/categories/arduino/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/posts/arduinodrone/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://flyingmonocopter.github.io/categories/</loc>
-    <lastmod>2021-01-17T13:21:10+09:00</lastmod>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/drone/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://flyingmonocopter.github.io/</loc>
-    <lastmod>2021-01-17T13:21:10+09:00</lastmod>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/posts/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/sbus/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/taranis/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/%EB%93%9C%EB%A1%A0/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flyingmonocopter.github.io/tags/%EC%A1%B0%EC%A2%85%EA%B8%B0/</loc>
+    <lastmod>2021-04-30T23:45:52+09:00</lastmod>
   </url>
   
   <url>
@@ -33,17 +88,7 @@
   </url>
   
   <url>
-    <loc>https://flyingmonocopter.github.io/posts/</loc>
-    <lastmod>2021-01-17T13:21:10+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://flyingmonocopter.github.io/tags/react/</loc>
-    <lastmod>2021-01-17T13:21:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://flyingmonocopter.github.io/tags/</loc>
     <lastmod>2021-01-17T13:21:10+09:00</lastmod>
   </url>
   
@@ -163,16 +208,6 @@
   </url>
   
   <url>
-    <loc>https://flyingmonocopter.github.io/tags/arduino/</loc>
-    <lastmod>2020-03-02T22:17:22+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://flyingmonocopter.github.io/categories/arduino/</loc>
-    <lastmod>2020-03-02T22:17:22+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://flyingmonocopter.github.io/posts/arduinoscratch/</loc>
     <lastmod>2020-03-02T22:17:22+09:00</lastmod>
   </url>
@@ -189,11 +224,6 @@
   
   <url>
     <loc>https://flyingmonocopter.github.io/tags/%EC%8A%A4%ED%81%AC%EB%9E%98%EC%B9%98/</loc>
-    <lastmod>2020-03-02T22:17:22+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://flyingmonocopter.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</loc>
     <lastmod>2020-03-02T22:17:22+09:00</lastmod>
   </url>
   
