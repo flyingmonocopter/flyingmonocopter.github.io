@@ -8,7 +8,61 @@
     <language>ko-kr</language>
     <managingEditor>doojin.kang@gmail.com (Flying Monocopter)</managingEditor>
     <webMaster>doojin.kang@gmail.com (Flying Monocopter)</webMaster>
-    <lastBuildDate>Fri, 30 Apr 2021 23:45:52 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 May 2021 14:38:12 +0900</lastBuildDate><atom:link href="https://flyingmonocopter.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>annotation</title>
+      <link>https://flyingmonocopter.github.io/tags/annotation/</link>
+      <pubDate>Wed, 05 May 2021 14:38:12 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/annotation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://flyingmonocopter.github.io/tags/java/</link>
+      <pubDate>Wed, 05 May 2021 14:38:12 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lombok</title>
+      <link>https://flyingmonocopter.github.io/tags/lombok/</link>
+      <pubDate>Wed, 05 May 2021 14:38:12 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/lombok/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>롬복</title>
+      <link>https://flyingmonocopter.github.io/tags/%EB%A1%AC%EB%B3%B5/</link>
+      <pubDate>Wed, 05 May 2021 14:38:12 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/%EB%A1%AC%EB%B3%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>어노테이션</title>
+      <link>https://flyingmonocopter.github.io/tags/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98/</link>
+      <pubDate>Wed, 05 May 2021 14:38:12 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>자바</title>
+      <link>https://flyingmonocopter.github.io/tags/%EC%9E%90%EB%B0%94/</link>
+      <pubDate>Wed, 05 May 2021 14:38:12 +0900</pubDate>
+      <author>doojin.kang@gmail.com (Flying Monocopter)</author>
+      <guid>https://flyingmonocopter.github.io/tags/%EC%9E%90%EB%B0%94/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>arduino</title>
       <link>https://flyingmonocopter.github.io/tags/arduino/</link>
