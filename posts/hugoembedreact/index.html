@@ -128,11 +128,11 @@ MD 내에서 HTML 을 직접 사용할 수 없는 제약도 있다.
 </code></pre><p><em><strong>주의 : 처음 { { 는 {{ 와 같이 붙여써야 한다. (Shortcode 가 실행되지 않도록 하기 위해서 띄어쓰기를 한 것임)</strong></em></p>
 <h2 id="사용자-정의-shortcode">사용자 정의 Shortcode</h2>
 <p>참고: <a href="https://gohugo.io/templates/shortcode-templates/">https://gohugo.io/templates/shortcode-templates/</a></p>
-<p>Template 을 만들고, MD 에서 이를 가져다 쓰는 형식으로 사용한다.</p>
+<p>Template 을 만들고, 블로그 컨텐츠 Markdown 파일에서 이를 가져다 쓰는 형식으로 사용한다.</p>
 <ol>
 <li>
 <p>Template 만들기</p>
-<p>/layouts/shortcodes/fortune.html 이라는 Template 파일을 만든다.</p>
+<p>/layouts/shortcodes/golden.html 이라는 Template 파일을 만든다.</p>
 </li>
 </ol>
 <pre><code>&lt;style&gt;
@@ -149,7 +149,7 @@ MD 내에서 HTML 을 직접 사용할 수 없는 제약도 있다.
 &lt;/div&gt;
 
 &lt;script&gt;
-{{ $goldens := readFile &quot;data/golden.txt&quot; }}
+{{ $goldens := readFile &quot;documents/golden.txt&quot; }}
 {{ $strs := split $goldens &quot;\n&quot; }}
 
 var goldens = [
@@ -168,7 +168,8 @@ function reload() {
 reload()
 
 &lt;/script&gt;
-</code></pre><p>Hugo Root 디렉토리 아래 data 디렉토리를 만들고 golden.txt 파일을 만든다.</p>
+</code></pre><p>Hugo Root 디렉토리 아래 documents 디렉토리를 만들고 golden.txt 파일을 만든다.
+golden.txt 파일은 텍스트 파일이다. 한줄에 하나씩 보여주고 싶은 글귀를 적는다.</p>
 <ol start="2">
 <li>
 <p>Markdown 에 Shortcoding</p>
